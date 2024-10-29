@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arpalink</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+        
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1b2b5f;
+            padding: 20px 50px;
+            color: white;
+        }
+        
+        header .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+        
+        header nav ul {
+            display: flex;
+            list-style: none;
+        }
+        
+        header nav ul li {
+            margin-right: 20px;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+        
+        header .login-buttons button {
+            margin-left: 10px;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        header .login-btn {
+            background-color: transparent;
+            border: 1px solid white;
+            color: white;
+        }
+        
+        header .signup-btn {
+            background-color: #4a90e2;
+            color: white;
+        }
+        
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #1b2b5f;
+            padding: 80px 50px;
+            color: white;
+        }
+        
+        .hero-text {
+            max-width: 600px;
+        }
+        
+        .hero-text h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+        
+        .hero-text p {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+        
+        .search-bar {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+        }
+        
+        .search-bar form {
+            display: flex;
+            gap: 10px;
+        }
+        
+        .search-bar select,
+        .search-bar input {
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        
+        .search-bar button {
+            padding: 10px 20px;
+            background-color: #4a90e2;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .search-bar button:hover {
+            background-color: #357abd;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">Arpalink</div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Service</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="login-buttons">
+            <button class="login-btn">Login</button>
+            <button class="signup-btn">Get Started</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-text">
+            <h1>Arpalink - Your Local Search patner.</h1>
+            <p>Find a place where you can be yourself..</p>
+        </div>
+
+        <div class="search-bar">
+            <form>
+                <select id="action">
+                    <option value="buy">Choose City</option>
+                    <option value="rent"></option>
+                    <option value="sell">Sell</option>
+                </select>
+
+                <select id="property-type">
+                    <option value="any">Any</option>
+                    <option value="house">House</option>
+                    <option value="apartment">Apartment</option>
+                </select>
+
+                <input type="text" placeholder="Street, City, Zip">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <script>
+        // Placeholder for future interactivity
+        // You can add event listeners or other dynamic elements as needed
+    </script>
+</body>
+
+</html>
